@@ -42,3 +42,6 @@ const server = http.createServer((req, res) => {
 server.listen(8000, () => {
   console.log("Server running at http://localhost:8000");
 });
+
+//cd "C:\parthiv\NODE JS\PROJECT"
+//node server.js

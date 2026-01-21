@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit User</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Edit User</h2>
+
+        <div class="form-box">
+            <form action="/updateUser" method="POST">
+                <input type="hidden" name="id" value="<%= user.id %>">
+
+                <input name="name" value="<%= user.name %>" required>
+                <input name="email" value="<%= user.email %>" required>
+                <input name="password" value="<%= user.password %>" required>
+                <input name="phone" value="<%= user.phone %>" required>
+                <input name="address" value="<%= user.address %>" required>
+
+                <button>Update User</button>
+            </form>
+            
+            <a class="back-btn" href="/">⬅ Back</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
